@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --active-icon: lightcyan;
+    --language-icon-bg: #f7f4f4;
+    --main-color: blue;
+    --border-color: black;
+    --hlight: orange;
+}
+header {
+    display: flex;
+}
+main > header {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid blue;
+    margin: 0 2.5%;
+}
+main > header > .language,
+.fc > .fi{
+    flex-basis: 25%;
+    margin: 0 2.5%;
+}
+.language > h2 > a:active,.language > h2 > a:focus,.language > h2 > a:hover {
+    box-shadow: 0 0 3px 3px var(--hlight);
+    background-color: var(--active-icon);
+    border: none;
+}
+.language > h2 > a {
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--language-icon-bg);
+    padding: 1% 0;
+    padding-left: 2.5%;
+    /* border: 2px solid red; */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5%;
+}
+main > iframe {
+    margin-top: 1.5%;
+    height: 100vh;
+    
+    border: 2px solid blue;
+}

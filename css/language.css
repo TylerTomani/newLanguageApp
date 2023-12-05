@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 90%;
+    padding-top: 2.5%;
+    margin: 0 auto;
+}
+
+#playBtn {
+    display: inline-block;
+    padding: .25% 1% 0;
+}
+#playBtn:active,#playBtn:focus,#playBtn:hover{
+    box-shadow: 1px 0px 2px 2px orange;
+}
+.animate{
+    transform: scale(1.2);
+    transition: all 500ms;
+}
+.deanimate{
+    transform: scale(1);
+    transition: all 500ms;
+}
+
+textarea {
+    font-size: 1.4rem;
+    padding-left: 1%;
+    padding-top: 1%;
+}
